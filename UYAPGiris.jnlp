@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jnlp spec="1.0+" codebase="https://avukat.uyap.gov.tr/uyap-giris/">
+	<information>
+		<title>UYAP Giris</title>
+		<vendor>U.Y.A.P</vendor>
+		<homepage href="http://vatandas.uyap.gov.tr" />
+		<shortcut online="true" install="false">
+			<desktop />
+			<menu submenu="UYAP Giris" />
+		</shortcut>
+	</information>
+	<security>
+		<all-permissions />
+	</security>
+	<resources>
+		<j2se version="1.8+" href="http://java.sun.com/products/autodl/j2se" />
+		<property name="jnlp.versionEnabled" value="true"/>
+		<jar href="uyap-giris.jar" version="1.123" main="true" />
+	</resources>
+	<application-desc name="UYAP E-Imza Girisi" main-class="tr.gov.uyap.system.login.esign.Main">
+		<argument>https://vatandas.uyap.gov.tr/desktop-config.xml</argument>
+	</application-desc>
+</jnlp>
